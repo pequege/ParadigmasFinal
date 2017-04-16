@@ -51,8 +51,4 @@ public class Venta {
         this.fecha  = new SimpleDateFormat("dd/MM/yy HH:mm:ss").format(new java.util.Date());
         this.lineasVenta = new ArrayList<LineaVenta>();
     }
-    
-    //public Double getTotal(){
-    //    return 2.0;
-    //}
 }

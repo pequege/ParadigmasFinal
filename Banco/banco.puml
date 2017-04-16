@@ -1,0 +1,9 @@
+@startuml
+class bancoPkg.Banco
+class bancoPkg.CajaAhorros
+class bancoPkg.Clientes
+class bancoPkg.Cuenta
+class bancoPkg.CuentaCorriente
+bancoPkg.CajaAhorros --|> bancoPkg.Cuenta
+bancoPkg.CuentaCorriente --|> bancoPkg.Cuenta
+@enduml

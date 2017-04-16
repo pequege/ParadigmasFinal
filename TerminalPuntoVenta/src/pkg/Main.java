@@ -1,4 +1,7 @@
 package pkg;
+
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Producto p1 = new Producto("Coke", 56421, 34.99);
@@ -14,6 +17,18 @@ public class Main {
         v3.addLinea(lv1);
         v3.addLinea(lv3);
         v3.mostrarLineas();
+        
+        
+        //practice
+        ArrayList <String> a1 = new ArrayList<>();
+        a1.add("Coke");
+        a1.add("Pizza");
+        a1.add("Milanga");
+        
+        java.util.Collections.sort(a1);
+        for(String lista: a1){
+            System.out.println(lista);
+        }
     }
     
 }
