@@ -6,6 +6,8 @@
 package vista;
 
 import controlador.Controlador;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -14,6 +16,7 @@ import controlador.Controlador;
 public class VentanaPrincipal extends javax.swing.JFrame {
 
     controlador.Controlador c = new Controlador();
+				JFrame ventanaModal = new JFrame();
     public VentanaPrincipal() {
         initComponents();
     }
@@ -96,11 +99,19 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void egresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egresoActionPerformed
-        c.EgresoDeVehiculo();
+        if(c.estaVacio()){
+										JOptionPane.showMessageDialog(ventanaModal, "No se han registrado vehículos");
+								}else{
+										c.EgresoDeVehiculo();
+								}
     }//GEN-LAST:event_egresoActionPerformed
 
     private void listadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listadoActionPerformed
-        c.ListarVehiculos(this);
+      if(c.estaVacio()){
+								JOptionPane.showMessageDialog(ventanaModal, "No se han registrado vehículos");
+						}else{
+								c.ListarVehiculos(this);
+						}
     }//GEN-LAST:event_listadoActionPerformed
 
     private void ingresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingresoActionPerformed

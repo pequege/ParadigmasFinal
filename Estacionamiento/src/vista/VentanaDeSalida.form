@@ -42,10 +42,6 @@
                       <Component id="cCombustible" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="cAceite" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="aceptar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
@@ -98,9 +94,7 @@
               <Component id="cAire" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="cCombustible" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="cAceite" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="aceptar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="cancelar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -139,11 +133,6 @@
     <Component class="javax.swing.JRadioButton" name="cCombustible">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cambio de filtro de combustible"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JRadioButton" name="cAceite">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Cambio de aceite"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="aceptar">

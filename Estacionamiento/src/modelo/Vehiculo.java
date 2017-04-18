@@ -3,7 +3,16 @@ public abstract class Vehiculo {
     private String patente;
     private String responsable;
     private Servicio servicio;
+    private int x;
 
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+    
     public String getPatente() {
         return patente;
     }

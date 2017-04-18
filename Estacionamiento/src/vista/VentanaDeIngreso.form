@@ -69,11 +69,11 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelCilindrada" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelCantidadPuertas" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelCabina" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -114,9 +114,9 @@
               <Component id="datoEspecifico" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCilindrada" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCantidadPuertas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCabina" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -178,11 +178,10 @@
     <Component class="javax.swing.JComboBox" name="tipoDeVehiculo">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="-"/>
-            <StringItem index="1" value="AUTOMOVIL"/>
-            <StringItem index="2" value="MOTOCICLETA"/>
-            <StringItem index="3" value="CAMIONETA"/>
+          <StringArray count="3">
+            <StringItem index="0" value="AUTOMOVIL"/>
+            <StringItem index="1" value="MOTOCICLETA"/>
+            <StringItem index="2" value="CAMIONETA"/>
           </StringArray>
         </Property>
       </Properties>
@@ -217,7 +216,7 @@
         <Property name="text" type="java.lang.String" value="Servicio de Mantenimiento"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
+    <Component class="javax.swing.JLabel" name="jLabelCilindrada">
       <Properties>
         <Property name="text" type="java.lang.String" value="cilindradas"/>
       </Properties>
@@ -227,7 +226,7 @@
         <Property name="text" type="java.lang.String" value="Servicio de Lavado"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel8">
+    <Component class="javax.swing.JLabel" name="jLabelCantidadPuertas">
       <Properties>
         <Property name="text" type="java.lang.String" value="cant. puertas"/>
       </Properties>
@@ -237,7 +236,7 @@
         <Property name="text" type="java.lang.String" value="LUGAR:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel9">
+    <Component class="javax.swing.JLabel" name="jLabelCabina">
       <Properties>
         <Property name="text" type="java.lang.String" value="tipo cabina"/>
       </Properties>

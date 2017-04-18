@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class Estadia {
     private Lugar lugar;
-    private String ingreso;
-    private Date egreso;
+    private int ingreso;
+    private int egreso;
 
     public Lugar getLugares() {
         return lugar;
@@ -15,19 +15,19 @@ public class Estadia {
         this.lugar = lugar;
     }
 
-    public String getIngreso() {
+    public int getIngreso() {
         return ingreso;
     }
 
-    public void setIngreso(String ingreso) {
+    public void setIngreso(int ingreso) {
         this.ingreso = ingreso;
     }
 
-    public Date getEgreso() {
+    public int getEgreso() {
         return egreso;
     }
 
-    public void setEgreso(Date egreso) {
+    public void setEgreso(int egreso) {
         this.egreso = egreso;
     }
     

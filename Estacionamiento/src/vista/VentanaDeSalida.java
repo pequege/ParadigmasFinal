@@ -1,7 +1,6 @@
 package vista;
 
 import controlador.Controlador;
-import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
@@ -15,17 +14,12 @@ public class VentanaDeSalida extends javax.swing.JDialog {
         initComponents();
         this.responsable.setText("");
         this.aceptar.setEnabled(false);
+        this.cAire.setEnabled(false);
+        this.cCombustible.setEnabled(false);
+        this.lavado.setEnabled(false);
     }
 
     controlador.Controlador c = new Controlador();
-
-    public JRadioButton getcAceite() {
-        return cAceite;
-    }
-
-    public void setcAceite(JRadioButton cAceite) {
-        this.cAceite = cAceite;
-    }
 
     public JRadioButton getcAire() {
         return cAire;
@@ -80,7 +74,6 @@ public class VentanaDeSalida extends javax.swing.JDialog {
         lavado = new javax.swing.JRadioButton();
         cAire = new javax.swing.JRadioButton();
         cCombustible = new javax.swing.JRadioButton();
-        cAceite = new javax.swing.JRadioButton();
         aceptar = new javax.swing.JToggleButton();
         jLabel1 = new javax.swing.JLabel();
         cancelar = new javax.swing.JToggleButton();
@@ -100,8 +93,6 @@ public class VentanaDeSalida extends javax.swing.JDialog {
         cAire.setText("Cambio de filtro de aire");
 
         cCombustible.setText("Cambio de filtro de combustible");
-
-        cAceite.setText("Cambio de aceite");
 
         aceptar.setText("ACEPTAR");
         aceptar.addActionListener(new java.awt.event.ActionListener() {
@@ -147,9 +138,6 @@ public class VentanaDeSalida extends javax.swing.JDialog {
                         .addContainerGap()
                         .addComponent(cCombustible))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(cAceite))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(55, 55, 55)
                         .addComponent(aceptar)
                         .addGap(43, 43, 43)
@@ -191,9 +179,7 @@ public class VentanaDeSalida extends javax.swing.JDialog {
                 .addComponent(cAire)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cCombustible)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cAceite)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(aceptar)
                     .addComponent(cancelar))
@@ -218,7 +204,6 @@ public class VentanaDeSalida extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton aceptar;
-    private javax.swing.JRadioButton cAceite;
     private javax.swing.JRadioButton cAire;
     private javax.swing.JRadioButton cCombustible;
     private javax.swing.JToggleButton cancelar;
